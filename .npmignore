@@ -1,6 +1,5 @@
-.coveralls.yml
-.eslintrc.js
+.claude
 .github
-CLAUDE.md
-coverage
 test
+CLAUDE.md
+eslint.config.js
