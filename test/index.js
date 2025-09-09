@@ -70,4 +70,13 @@ describe('getTracking', () => {
         assert(tracking);
         assert(tracking.trackResponse);
     });
+
+    test('should handle error for blank tracking number', async () => {
+        const ups = new Ups({
+            client_id: process.env.CLIENT_ID,
+            client_secret: process.env.CLIENT_SECRET
+        });
+
+        await assert.rejects(ups.getTracking(null));
+    });
 });
