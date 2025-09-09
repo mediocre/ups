@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "http-errors": "~2.0.0",
+        "memory-cache": "~0.2.0"
+    },
+    "description": "The Power of UPS on Your Digital Platform. Our APIs power the data connections needed to deliver value to customers through e-commerce platforms, supply chain visibility solutions and direct integrations.",
+    "devDependencies": {
+        "@eslint/js": "*",
+        "globals": "*"
+    },
+    "keywords": [
+        "logistics",
+        "tracking",
+        "ups"
+    ],
+    "license": "Apache-2.0",
+    "name": "@mediocre/ups",
+    "repository": "https://github.com/mediocre/ups",
+    "scripts": {
+        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+        "test": "node --test test/"
+    },
+    "version": "0.1.0"
+}
