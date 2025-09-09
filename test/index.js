@@ -3,7 +3,7 @@ const { test, describe, beforeEach, after } = require('node:test');
 
 const cache = require('memory-cache');
 
-const Ups = require('../index');
+const UPS = require('../index');
 
 beforeEach(() => {
     cache.clear();
@@ -15,7 +15,7 @@ after(() => {
 
 describe('getAccessToken', () => {
     test('should return an error for invalid environment_url', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             environment_url: 'invalid'
         });
 
@@ -23,7 +23,7 @@ describe('getAccessToken', () => {
     });
 
     test('should return an error for non 200 status code', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             environment_url: 'https://httpbin.org/status/500#'
         });
 
@@ -31,7 +31,7 @@ describe('getAccessToken', () => {
     });
 
     test('should return a valid access token', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             client_id: process.env.CLIENT_ID,
             client_secret: process.env.CLIENT_SECRET
         });
@@ -46,7 +46,7 @@ describe('getAccessToken', () => {
     });
 
     test('should return the same access token on subsequent calls', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             client_id: process.env.CLIENT_ID,
             client_secret: process.env.CLIENT_SECRET
         });
@@ -60,7 +60,7 @@ describe('getAccessToken', () => {
 
 describe('getTracking', () => {
     test('should return tracking data for test tracking number', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             client_id: process.env.CLIENT_ID,
             client_secret: process.env.CLIENT_SECRET
         });
@@ -72,7 +72,7 @@ describe('getTracking', () => {
     });
 
     test('should handle error for blank tracking number', async () => {
-        const ups = new Ups({
+        const ups = new UPS({
             client_id: process.env.CLIENT_ID,
             client_secret: process.env.CLIENT_SECRET
         });

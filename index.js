@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const cache = require('memory-cache');
 const createError = require('http-errors');
 
-function Ups(args) {
+function UPS(args) {
     const options = Object.assign({
         environment_url: 'https://wwwcie.ups.com'
     }, args);
@@ -82,4 +82,4 @@ function Ups(args) {
     };
 }
 
-module.exports = Ups;
+module.exports = UPS;

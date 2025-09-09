@@ -14,9 +14,9 @@ $ npm install @mediocre/ups
 ## Usage
 
 ```javascript
-const Ups = require('ups');
+const UPS = require('@mediocre/ups');
 
-const ups = new Ups({
+const ups = new UPS({
     client_id: 'your_client_id',
     client_secret: 'your_client_secret',
     environment_url: 'https://wwwcie.ups.com' // Use https://onlinetools.ups.com for production
