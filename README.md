@@ -1,7 +1,7 @@
 # ups
 
 [![Build Status](https://github.com/mediocre/ups/workflows/test/badge.svg?branch=main)](https://github.com/mediocre/ups/actions?query=workflow%3Atest)
-[![Coverage Status](https://coveralls.io/repos/mediocre/ups/badge.svg?branch=main)](https://coveralls.io/r/mediocre/ups?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/mediocre/ups/badge.svg)](https://coveralls.io/github/mediocre/ups)
 
 The Power of UPS on Your Digital Platform. Our APIs power the data connections needed to deliver value to customers through e-commerce platforms, supply chain visibility solutions and direct integrations.
 
